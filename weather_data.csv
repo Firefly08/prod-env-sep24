@@ -1,0 +1,6 @@
+City,Temperature (°C),Humidity (%),Pressure (hPa),Wind Speed (m/s),Description,Timestamp
+London,28,58,1028,13,clear sky,2025-06-03 11:39:50
+New York,26,71,1021,6,clear sky,2025-06-03 11:39:50
+Tokyo,28,58,1008,13,clear sky,2025-06-03 11:39:51
+Sydney,29,74,1034,9,clear sky,2025-06-03 11:39:51
+Paris,23,68,1038,13,clear sky,2025-06-03 11:39:52
