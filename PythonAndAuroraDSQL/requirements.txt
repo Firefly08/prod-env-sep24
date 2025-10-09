@@ -1,0 +1,4 @@
+boto3==1.35.30         # AWS SDK for Python, includes dsql client
+botocore==1.35.30      # Core dependency of boto3
+psycopg[binary]==3.2.3 # PostgreSQL driver (binary includes C extensions for speed)
+requests==2.32.3       # To call external REST APIser

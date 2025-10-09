@@ -1,47 +1,47 @@
 [
   {
     "City": "London",
-    "Temperature (\u00b0C)": 28,
-    "Humidity (%)": 58,
-    "Pressure (hPa)": 1028,
-    "Wind Speed (m/s)": 13,
+    "Temperature (\u00b0C)": 30,
+    "Humidity (%)": 75,
+    "Pressure (hPa)": 1025,
+    "Wind Speed (m/s)": 10,
     "Description": "clear sky",
-    "Timestamp": "2025-06-03 11:39:50"
+    "Timestamp": "2025-09-11 14:59:11"
   },
   {
     "City": "New York",
-    "Temperature (\u00b0C)": 26,
-    "Humidity (%)": 71,
-    "Pressure (hPa)": 1021,
-    "Wind Speed (m/s)": 6,
+    "Temperature (\u00b0C)": 29,
+    "Humidity (%)": 59,
+    "Pressure (hPa)": 1039,
+    "Wind Speed (m/s)": 14,
     "Description": "clear sky",
-    "Timestamp": "2025-06-03 11:39:50"
+    "Timestamp": "2025-09-11 14:59:11"
   },
   {
     "City": "Tokyo",
-    "Temperature (\u00b0C)": 28,
-    "Humidity (%)": 58,
+    "Temperature (\u00b0C)": 33,
+    "Humidity (%)": 78,
     "Pressure (hPa)": 1008,
     "Wind Speed (m/s)": 13,
     "Description": "clear sky",
-    "Timestamp": "2025-06-03 11:39:51"
+    "Timestamp": "2025-09-11 14:59:11"
   },
   {
     "City": "Sydney",
-    "Temperature (\u00b0C)": 29,
-    "Humidity (%)": 74,
-    "Pressure (hPa)": 1034,
+    "Temperature (\u00b0C)": 24,
+    "Humidity (%)": 54,
+    "Pressure (hPa)": 1044,
     "Wind Speed (m/s)": 9,
     "Description": "clear sky",
-    "Timestamp": "2025-06-03 11:39:51"
+    "Timestamp": "2025-09-11 14:59:11"
   },
   {
     "City": "Paris",
-    "Temperature (\u00b0C)": 23,
-    "Humidity (%)": 68,
-    "Pressure (hPa)": 1038,
-    "Wind Speed (m/s)": 13,
+    "Temperature (\u00b0C)": 30,
+    "Humidity (%)": 75,
+    "Pressure (hPa)": 1005,
+    "Wind Speed (m/s)": 10,
     "Description": "clear sky",
-    "Timestamp": "2025-06-03 11:39:52"
+    "Timestamp": "2025-09-11 14:59:11"
   }
 ]

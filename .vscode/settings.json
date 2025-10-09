@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Module10Topic2-MLOps"
+    ]
+}

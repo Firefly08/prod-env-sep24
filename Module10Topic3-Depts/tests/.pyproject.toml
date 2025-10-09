@@ -1,0 +1,11 @@
+[tool.pytest.ini_option]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-lenght = 100
+target-bersion = "py311"
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.isort]
+known-first-party = ["pipeline"]

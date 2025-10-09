@@ -1,0 +1,38 @@
+Searching for '18/07/225' in all Excel files in: C:\Users\laho2188\Downloads\Enter
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 02.09.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 03.09.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 04.09.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 10.09.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 26.08.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 27.08.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+✅ Found '18/07/225' in:
+   - File: Bakerloo LIne  - Graffiti Project - Tracker 31.08.2025.xlsx
+   - Sheet: Repeat Attacks 1
+   - Location: Row 58, Column 2
+
+--- Search complete! ---
