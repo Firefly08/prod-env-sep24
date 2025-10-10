@@ -1,6 +1,8 @@
 import gzip
 from pathlib import Path
+
 import pandas as pd
+
 
 def _import():
     from pipeline.runner import list_unprocessed_files, process_all_to_master
@@ -32,7 +34,9 @@ def test_process_all_to_master_happy_path(tmp_path):
     in_dir = tmp_path / "ingest"
     proc_dir = tmp_path / "processed"
     out_dir = tmp_path / "out"
-    in_dir.mkdir(); proc_dir.mkdir(); out_dir.mkdir()
+    in_dir.mkdir()
+    proc_dir.mkdir()
+    out_dir.mkdir()
 
     cols = ["action_taken","state_abbr","respondent_id","loan_amount_000s","applicant_income_000s"]
     df1 = pd.DataFrame([[1,"NY","r1",100,50],[2,"CA","r2",200,30]], columns=cols)
@@ -59,9 +63,12 @@ def test_process_all_to_master_happy_path(tmp_path):
 
 def test_process_all_to_master_idempotent_when_no_new_files(tmp_path):
     _, process_all_to_master = _import()
-    in_dir = tmp_path / "ingest"; in_dir.mkdir()
-    proc_dir = tmp_path / "processed"; proc_dir.mkdir()
-    out_dir = tmp_path / "out"; out_dir.mkdir()
+    in_dir = tmp_path / "ingest"
+    in_dir.mkdir()
+    proc_dir = tmp_path / "processed"
+    proc_dir.mkdir()
+    out_dir = tmp_path / "out"
+    out_dir.mkdir()
 
     cols = ["action_taken","state_abbr","respondent_id","loan_amount_000s","applicant_income_000s"]
     df = pd.DataFrame([[1,"NY","r1",100,50]], columns=cols)

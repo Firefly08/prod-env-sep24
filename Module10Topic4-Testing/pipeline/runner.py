@@ -1,11 +1,20 @@
-import logging
 import argparse
+import logging
 import shutil
 from datetime import datetime
 from pathlib import Path
-from pipeline.config import DATA_DIR, PROCESSED_DIR, MASTER_OUTPUT, FILE_GLOB, CHUNK_SIZE, KEEP_COLS, DTYPES
+
+from pipeline.config import (
+    CHUNK_SIZE,
+    DATA_DIR,
+    DTYPES,
+    FILE_GLOB,
+    KEEP_COLS,
+    MASTER_OUTPUT,
+    PROCESSED_DIR,
+)
 from pipeline.io_utils import iter_chunks, write_chunk
-from pipeline.transform import select_keep_cols, sanity_checks
+from pipeline.transform import sanity_checks, select_keep_cols
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -25,7 +34,10 @@ def process_file_into_master(
     """Append-cleaned chunks from a single source file into the master file."""
     logger.info("→ %s → %s", src_path.name, master_path.name)
     rows = 0
-    for i, chunk in enumerate(iter_chunks(src_path, usecols=KEEP_COLS, dtype=DTYPES, chunksize=chunk_size), start=1):
+    for i, chunk in enumerate(iter_chunks(src_path,
+                                          usecols=KEEP_COLS,
+                                          dtype=DTYPES,
+                                          chunksize=chunk_size), start=1):
         logger.info("Chunk %d - %s rows", i, len(chunk))
         df = select_keep_cols(chunk, KEEP_COLS)
         sanity_checks(df)
@@ -83,4 +95,8 @@ if __name__ == "__main__":
     parser.add_argument("--pattern", type=str, default=FILE_GLOB)
     parser.add_argument("--fresh-master", action="store_true", help="Start master from scratch")
     args = parser.parse_args()
-    process_all_to_master(args.in_dir, args.processed_dir, args.pattern, MASTER_OUTPUT, fresh_master=args.fresh_master)
+    process_all_to_master(args.in_dir,
+                          args.processed_dir,
+                          args.pattern,
+                          MASTER_OUTPUT,
+                          fresh_master=args.fresh_master)

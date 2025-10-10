@@ -1,12 +1,13 @@
 import pandas as pd
 import pytest
 
+
 # The tests expect these functions in your package:
 # from pipeline.transform import select_keep_cols, sanity_checks
 # To avoid breaking import if running these tests standalone,
 # we do a lazy import inside each test.
 def _import():
-    from pipeline.transform import select_keep_cols, sanity_checks
+    from pipeline.transform import sanity_checks, select_keep_cols
     return select_keep_cols, sanity_checks
 
 def test_select_keep_cols_ok(good_df):

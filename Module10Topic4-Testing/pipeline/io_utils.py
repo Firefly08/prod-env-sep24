@@ -1,7 +1,8 @@
 import logging
-import pandas as pd
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
+
+import pandas as pd
 
 logger = logging.getLogger(__name__)
 

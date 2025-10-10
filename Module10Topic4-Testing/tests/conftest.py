@@ -1,11 +1,16 @@
 import gzip
-from pathlib import Path
+
 import pandas as pd
 import pytest
 
+
 @pytest.fixture
 def sample_columns():
-    return ["action_taken", "state_abbr", "respondent_id", "loan_amount_000s", "applicant_income_000s"]
+    return ["action_taken",
+            "state_abbr",
+            "respondent_id",
+            "loan_amount_000s",
+            "applicant_income_000s"]
 
 @pytest.fixture
 def good_df(sample_columns):
@@ -35,7 +40,6 @@ def bad_df_neg_income(sample_columns):
 @pytest.fixture
 def make_gz_csv(tmp_path):
     """Write a DataFrame to gzipped CSV and return the path."""
-    import gzip
     def _writer(df, name="part.csv.gz"):
         out = tmp_path / name
         with gzip.open(out, "wt", encoding="utf-8") as f:

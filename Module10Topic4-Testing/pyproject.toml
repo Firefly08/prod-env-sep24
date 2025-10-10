@@ -5,7 +5,7 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py311"
-select = ["E","F","I","UP","B"]
 
-[tool.ruff.isort]
-known-first-party = ["pipeline"]
+[tool.ruff.lint]
+select = ["E","F","I","UP","B"]
+isort.known-first-party = ["pipeline"]

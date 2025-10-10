@@ -9,3 +9,4 @@ Data/
 .coverage
 .cache/
 .pytest_cache/
+*.ipynb

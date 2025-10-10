@@ -1,9 +1,10 @@
 import gzip
+
 import pandas as pd
-from pathlib import Path
+
 
 def _import():
-    from pipeline.io_utils import write_chunk, move_file, iter_chunks
+    from pipeline.io_utils import iter_chunks, move_file, write_chunk
     return write_chunk, move_file, iter_chunks
 
 def test_write_chunk_header_and_append(tmp_path):
